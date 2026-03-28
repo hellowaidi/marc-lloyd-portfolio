@@ -369,6 +369,142 @@ h2 {
   color: #3a3a34;
 }
 
+.about-education-title {
+  font-size: 1.1rem;
+  margin: 1.8rem 0 1rem 0;
+  padding-top: 1.2rem;
+  border-top: 1px solid #e0d5c7;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.about-intro-title {
+  font-size: 0.75rem;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: 0.14em;
+  color: #000;
+  font-weight: 700;
+}
+
+.intro-description-about {
+  margin: 0;
+  color: #3a3a34;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.about-education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.about-education-grid .education-card {
+  background: linear-gradient(165deg, #fefbf5 0%, #faf6ed 100%);
+  border: 1px solid #f0e6d8;
+  border-radius: 12px;
+  padding: 0.9rem;
+  min-height: auto;
+  box-shadow: none;
+}
+
+.about-education-grid .education-card h4 {
+  font-size: 0.95rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.about-experience-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.experience-card-about {
+  background: linear-gradient(165deg, #fefbf5 0%, #faf6ed 100%);
+  border: 1px solid #f0e6d8;
+  border-radius: 12px;
+  padding: 0.9rem;
+  min-height: auto;
+  box-shadow: none;
+}
+
+.experience-card-about h4 {
+  font-size: 0.95rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.experience-company-about {
+  margin: 0 0 0.4rem 0;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.experience-industry-about {
+  margin: 0 0 0.4rem 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.experience-department-about {
+  margin: 0 0 0.4rem 0;
+  color: var(--ink);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.experience-description-about {
+  margin: 0;
+  color: #3a3a34;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+/* Education Section */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.education-card {
+  background: linear-gradient(165deg, #fffcf7 0%, #faf6ed 100%);
+  border: 1px solid #e0d5c7;
+  border-radius: 16px;
+  padding: 1.15rem 1.1rem;
+  min-height: 180px;
+  box-shadow: 0 10px 24px rgba(20, 22, 26, 0.06);
+}
+
+.education-card h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.6rem 0;
+  color: var(--ink);
+}
+
+.education-school {
+  margin: 0 0 0.8rem 0;
+  color: var(--accent);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.education-period {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
 .contact p {
   margin: 0;
   font-size: 1.02rem;
