@@ -1,3 +1,9 @@
+@media (max-width: 700px) {
+  .hero-content .envisioned-break {
+    display: block;
+    width: 100%;
+  }
+}
 #contact b:contains('Mobile Number:')::after {
   content: "";
   display: block;
@@ -681,6 +687,10 @@ h2 {
 }
 
 @media (max-width: 700px) {
+      .about-education-grid,
+      .education-grid {
+        grid-template-columns: 1fr !important;
+      }
     .about-experience-grid {
       grid-template-columns: 1fr !important;
     }
