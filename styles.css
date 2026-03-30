@@ -703,6 +703,11 @@ h2 {
   .section {
     padding: 2.1rem 0;
   }
+
+  .skill-items {
+    grid-template-columns: 1fr !important;
+    gap: 0.7rem;
+  }
 }
 
 /* Certifications Section Styling - Cleaned */
