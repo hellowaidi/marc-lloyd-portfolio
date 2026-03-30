@@ -1,13 +1,24 @@
+#contact b:contains('Mobile Number:')::after {
+  content: "";
+  display: block;
+  margin-bottom: 1.1em;
+}
+
+#contact b:contains('Based In:')::after {
+  content: "";
+  display: block;
+  margin-bottom: 1.1em;
+}
 :root {
-  --bg: #ffffff;
-  --ink: #2a2a2a;
+  --bg: #F7F7FF;
+  --ink: #2B2D42;
   --muted: #7a7a6e;
-  --accent: #D96C06;
-  --accent-soft: #EFCA08;
-  --accent-green: #8EA208;
-  --accent-citrine: #BDBF09;
-  --accent-jonquil: #F49F0A;
-  --panel: #fffcf7;
+  --accent: #D90429;
+  --accent-soft: #FFB703;
+  --accent-blue: #4361EE;
+  --accent-red: #D90429;
+  --accent-yellow: #FFB703;
+  --panel: #F7F7FF;
   --stroke: #e0d5c7;
   /* Updated: March 28, 2026 */
 }
@@ -58,6 +69,22 @@ main,
   justify-content: space-between;
   align-items: baseline;
   border-bottom: 1px solid var(--stroke);
+#contact h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info {
+  margin-bottom: 1.2rem;
+}
+
+.personal-info {
+  margin-bottom: 1.2rem;
+}
+
+.social-links {
+  margin-top: 1.5rem;
+}
   position: sticky;
   top: 0;
   z-index: 9999;
@@ -140,7 +167,7 @@ main,
   border-radius: 25px;
   overflow: hidden;
   background: linear-gradient(165deg, #fffcf7 0%, #faf6ed 100%);
-  border: 15px solid white;
+  border: 15px solid #F7F7FF;
   box-shadow: 0 15px 40px rgba(20, 22, 26, 0.15);
   align-self: flex-start;
   margin-top: 0.75rem;
@@ -190,18 +217,18 @@ h1 span {
 
 .dev::before {
   content: 'D';
-  color: #D96C06;
+  color: #D90429;
   font-weight: 800;
 }
 
 .dev-e {
-  color: #8EA208;
+  color: #4361EE;
   font-weight: 800;
 }
 
 .dev::after {
   content: 'V';
-  color: #EFCA08;
+  color: #FFB703;
   font-weight: 800;
 }
 
@@ -212,15 +239,15 @@ h1 span {
 }
 
 .letter-d {
-  color: #D96C06;
+  color: #D90429;
 }
 
 .letter-e {
-  color: #8EA208;
+  color: #4361EE;
 }
 
 .letter-v {
-  color: #EFCA08;
+  color: #FFB703;
 }
 
 .intro {
@@ -369,18 +396,18 @@ h2 {
 }
 
 .skill-level.beginner {
-  background-color: #F49F0A;
-  color: white;
+  background-color: #FFB703;
+  color: #2B2D42;
 }
 
 .skill-level.intermediate {
-  background-color: #EFCA08;
-  color: #3a3a34;
+  background-color: #4361EE;
+  color: #F7F7FF;
 }
 
 .skill-level.advanced {
-  background-color: #8EA208;
-  color: white;
+  background-color: #D90429;
+  color: #F7F7FF;
 }
 
 .project-grid {
@@ -443,13 +470,13 @@ h2 {
 }
 
 .tag-type {
-  background-color: #EFCA08;
-  color: #3a3a34;
+  background-color: #FFB703;
+  color: #2B2D42;
 }
 
 .tag-tech {
-  background-color: #8EA208;
-  color: white;
+  background-color: #4361EE;
+  color: #F7F7FF;
 }
 
 .project-btn {
@@ -459,12 +486,12 @@ h2 {
   gap: 0.4rem;
 
   padding: 0.45rem 0.9rem;
-  background: #F49F0A;
-  border: 1px solid rgb(206, 130, 0);
+  background: #D90429;
+  border: 1px solid #D90429;
   border-radius: 999px;
 
   text-decoration: none;
-  color: white;
+  color: #F7F7FF;
   font-weight: 600;
   font-size: 0.85rem;
 
@@ -475,8 +502,9 @@ h2 {
 }
 
 .project-btn:hover {
-  border-color: rgb(206, 130, 0);
-  color: white;
+  border-color: #4361EE;
+  color: #FFB703;
+  background: #4361EE;
   transform: translateY(-2px);
 }
 
@@ -677,7 +705,7 @@ h2 {
   }
 }
 
-/* Certifications Section Styling */
+/* Certifications Section Styling - Cleaned */
 .cert-list {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -721,12 +749,6 @@ h2 {
   background: #e8dcc9;
 }
 
-.cert-link h3 {
-  font-size: 0.95rem;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .cert-header {
   display: flex;
   align-items: flex-start;
@@ -734,12 +756,11 @@ h2 {
   margin-bottom: 0.3rem;
 }
 
-.cert-issuer-logo {
+.cert-issuer-logo, .issuer-logo {
   width: 25px;
   height: 25px;
   object-fit: contain;
   flex-shrink: 0;
-  margin-top: 0.2rem;
   border-radius: 10px;
 }
 
@@ -747,41 +768,12 @@ h2 {
   flex: 1;
 }
 
-.cert-header h3 {
+.cert-header h3, .cert-link h3 {
   font-size: 0.95rem;
   margin: 0;
 }
 
-.issuer-logo {
-  width: 28px;
-  height: 28px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-.cert-issuer {
-  margin: 0;
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin-bottom: 0.3rem;
-  display: none;
-}
-
-.cert-date {
-  margin: 0;
-  font-size: 0.85rem;
-  color: var(--accent);
-  font-weight: 600;
-  margin-bottom: auto;
-  display: none;
-}
-
-.cert-view {
-  margin-top: 0.8rem;
-  margin-bottom: 0;
-  font-size: 0.9rem;
-  color: var(--accent);
-  font-weight: 600;
+.cert-issuer, .cert-date, .cert-view {
   display: none;
 }
 
@@ -799,12 +791,8 @@ h2 {
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 .cert-modal-content {
@@ -897,22 +885,15 @@ h2 {
   .cert-list {
     grid-template-columns: 1fr;
   }
-
   .cert-modal-content {
     max-width: 95vw;
     max-height: 95vh;
   }
-
   .cert-modal-close {
     top: 15px;
     right: 20px;
     font-size: 28px;
   }
-}
-
-#contact h3 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 
 .social-links {
