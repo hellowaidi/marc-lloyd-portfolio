@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marc | Portfolio</title>
+    <title>Marc Lloyd's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,20 +16,29 @@
     <div class="texture" aria-hidden="true"></div>
 
     <header class="site-header">
-      <p class="brand">MARC LLOYD CORPORAL</p>
-      <p class="tagline">My Portfolio</p>
+      <div class="header-inner">
+        <p class="brand">MARC LLOYD CORPORAL</p>
+
+        <nav class="site-nav">
+          <a href="#home">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section class="hero section">
+      <section id="home" class="hero section">
         <div class="hero-container">
           <div class="hero-photo">
             <img src="images/photo.JPG" alt="Photo of Me" />
           </div>
           <div class="hero-content">
             <h1>
-              I put the <span class="color-red">D</span><span class="color-blue">E</span><span class="color-yellow">V</span> into the ideas
-              <span class="color-blue">E</span>N<span class="color-yellow">V</span>ISIONE<span class="color-red">D</span>!
+              I put the <span class="letter-d">D</span><span class="letter-e">E</span><span class="letter-v">V</span> into the ideas
+              <span class="letter-e">E</span>N<span class="letter-v">V</span>ISIONE<span class="letter-d">D</span>!
             </h1>
             <p class="intro">
               I am a fourth-year Computer Science student from Holy Angel University, committed to  creative inputs and curated outputs.
@@ -80,7 +89,7 @@ I performed networking and technical support tasks focused on maintaining system
         </div>
       </section>
 
-      <section class="skills section">
+      <section id="skills" class="skills section">
         <h2>Skills</h2>
         <div class="panel skills-panel">
           <!-- Skill Tabs -->
@@ -190,33 +199,75 @@ I performed networking and technical support tasks focused on maintaining system
         </div>
       </section>
 
-      <section class="projects section">
+      <section id="projects" class="projects section">
         <h2>Projects</h2>
         <div class="project-grid">
           <article class="project-card">
-            <h3>ArniScore</h3>
-            <p>
-              ArniScore is a system that automatically detects and classifies strikes in Modern Arnis competitions as either valid or invalid. By combining CNN-LSTM for spatiotemporal classification and YOLO for contact detection, it generates real-time outputs such as strike classifications, confidence scores, and strike counts.
-            </p>
-          </article>
+  <div class="project-header">
+    <img src="images/arniscore.png" alt="ArniScore Logo" />
+    <h3>ArniScore</h3>
+  </div>
 
-          <article class="project-card">
-            <h3>FreedFromWalls</h3>
-            <p>
-              FreedFromWalls is a digital journaling and mood tracking application that serves as both a virtual diary and a virtual company. The name is a double entendre - it represents both a freedom wall where users can share their perspectives without interference, and liberation from traditional social media walls.
-            </p>
-          </article>
+  <p>
+ArniScore is a system that automatically detects and classifies strikes in Modern Arnis competitions as either valid or invalid. By combining CNN-LSTM for spatiotemporal classification and YOLO for contact detection, it generates real-time outputs such as strike classifications, confidence scores, and strike counts.  </p>
 
-          <article class="project-card">
-            <h3>SchedTool</h3>
-            <p>
-              SchedTool is a digital class scheduling solution that optimizes the academic scheduling process by ensuring efficient matching between rooms, instructors, subjects, and time slots. Using genetic algorithms, it creates conflict-free schedules while reducing manual effort and eliminating human errors.
-            </p>
-          </article>
+  <div class="project-tags">
+    <span class="tag tag-type">Desktop</span>
+    <span class="tag tag-tech">Python</span>
+  </div>
+
+  <a href="https://github.com/hellowaidi/ArniScore" target="_blank" class="project-btn">
+    View Repository
+    <img src="images/arrow.png" alt="arrow" />
+  </a>
+</article>
+
+
+<article class="project-card">
+  <div class="project-header">
+    <img src="images/freedfromwalls.png" alt="FreedFromWalls Logo" />
+    <h3>FreedFromWalls</h3>
+  </div>
+
+  <p>
+FreedFromWalls is a digital journaling and mood tracking application that serves as both a virtual diary and a virtual company. The name is a double entendre - it represents both a freedom wall where users can share their perspectives without interference, and liberation from traditional social media walls.  </p>
+
+  <div class="project-tags">
+    <span class="tag tag-type">Mobile</span>
+    <span class="tag tag-tech">Dart</span>
+    <span class="tag tag-tech">Flutter</span>
+  </div>
+
+  <a href="https://github.com/hellowaidi/FreedFromWalls" target="_blank" class="project-btn">
+    View Repository
+    <img src="images/arrow.png" alt="arrow" />
+    </a>
+</article>
+
+
+<article class="project-card">
+  <div class="project-header">
+    <img src="images/schedtool.png" alt="SchedTool Logo" />
+    <h3>SchedTool</h3>
+  </div>
+
+  <p>
+SchedTool is a digital class scheduling application that optimizes the academic scheduling process by ensuring efficient matching between rooms, instructors, subjects, and time slots. Using genetic algorithms, it creates conflict-free schedules while reducing manual effort and eliminating human errors.  </p>
+
+  <div class="project-tags">
+    <span class="tag tag-type">Desktop</span>
+    <span class="tag tag-tech">Python</span>
+  </div>
+
+  <a href="https://github.com/hellowaidi/SchedTool" target="_blank" class="project-btn">
+    View Repository
+    <img src="images/arrow.png" alt="arrow" />
+  </a>
+</article>
         </div>
       </section>
 
-      <section class="certifications section">
+      <section id="certifications" class="certifications section">
         <h2>Certifications</h2>
         <div class="cert-list">
           <article class="cert-item">
@@ -429,17 +480,45 @@ I performed networking and technical support tasks focused on maintaining system
         </div>
       </div>
 
-      <section class="contact section">
+      <section id="contact" class="contact section">
         <h2>Contact</h2>
         <p>
-          Open for freelance projects and collaborations.<br />
-          Email: hello@marcportfolio.com
+        Personal Email: marccorporal23@gmail.com
         </p>
+        <p>
+        Mobile Number: 0915-352-4282
+        </p>
+
+        <h3>Socials</h3>
+
+<div class="social-links">
+
+  <a href="https://www.linkedin.com/in/marc-lloyd-corporal-a21162391/" target="_blank" class="social-btn">
+    <img src="images/linkedin.png" alt="LinkedIn" />
+    LinkedIn
+  </a>
+
+  <a href="https://github.com/hellowaidi" target="_blank" class="social-btn">
+    <img src="images/github.png" alt="GitHub" />
+    GitHub
+  </a>
+
+  <a href="https://www.credly.com/users/marc-lloyd-corporal" target="_blank" class="social-btn">
+    <img src="images/credly.png" alt="Credly" />
+    Credly
+  </a>
+
+</div>
       </section>
+
+      
     </main>
 
     <footer class="site-footer">
-      <p>© 2026 Marc Lloyd Corporal. All rights reserved.</p>
+    <div class="footer-inner">
+        <p>© 2026 Marc Lloyd Corporal. All rights reserved.</p>
+        <p>My Portfolio</p>
+      </div>
     </footer>
 
     <script>
